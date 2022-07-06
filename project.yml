@@ -1,0 +1,8 @@
+packages:
+  - name: sample
+    actions:
+      - name: hello
+environment:
+  PUBLIC_URL: "${PUBLIC_URL}"
+  APP_URL: "${APP_URL}"
+  APP_DOMAIN: "${APP_DOMAIN}"
