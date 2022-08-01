@@ -22,9 +22,7 @@ export function main(args: MainArgs): MainFnResponse | Promise<MainFnResponse> {
       body: 'Missing name or age'
     }
   }
-  
-  console.log(process.env);
-  
+    
   const newUser = new User(args.name, args.age);
   newUser.printUserInfo();
 
