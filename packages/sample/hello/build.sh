@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # When deploying, the doctl CLI will run this script to build the  
-# nessesary accests required.
+# necessary accests required.
 yarn install 
 yarn build
 
