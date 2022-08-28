@@ -2,4 +2,6 @@ packages:
   - name: user
     actions:
       - name: create
+        runtime: nodejs:default
       - name: list
+        runtime: nodejs:default
