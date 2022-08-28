@@ -1,4 +1,5 @@
 packages:
-  - name: sample
+  - name: user
     actions:
-      - name: hello
+      - name: create
+      - name: list
