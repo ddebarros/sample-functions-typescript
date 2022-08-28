@@ -1,0 +1,13 @@
+{
+  "name": "create",
+  "version": "0.1.0",
+  "main": "dist/packages/user/create/index.js",
+  "scripts": {
+    "build": "ttsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3",
+    "ttypescript":"1.5.13",
+    "typescript-transform-paths":"3.3.1"
+  }
+}
