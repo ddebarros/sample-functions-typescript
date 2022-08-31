@@ -1,0 +1,7 @@
+{
+  "extends": "../../../lib/config/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./list",
+    "outDir": "./dist",
+  }
+}

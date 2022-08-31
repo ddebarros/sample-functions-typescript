@@ -1,4 +1,7 @@
 packages:
-  - name: sample
+  - name: user
     actions:
-      - name: hello
+      - name: create
+        runtime: nodejs:default
+      - name: list
+        runtime: nodejs:default

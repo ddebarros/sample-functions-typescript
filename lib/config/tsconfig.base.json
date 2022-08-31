@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+		"paths": {
+			"common/*": ["../../../../lib/common/*"]
+		},
+    "plugins": [
+      { "transform": "typescript-transform-paths" },
+    ],
     "module": "CommonJS",
     "target": "ES2017",
     "noImplicitAny": true,

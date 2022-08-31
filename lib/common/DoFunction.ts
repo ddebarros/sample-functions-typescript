@@ -1,5 +1,3 @@
-import { User } from "./User"
-
 export interface MainArgs {
   __ow_headers?: Record<string, any>
   __ow_path?: string
@@ -15,19 +13,4 @@ export interface MainFnResponse {
   body?: string | Record<string, any>;
 }
 
-export function main(args: MainArgs): MainFnResponse | Promise<MainFnResponse> {
-  if (!args.name || !args.age) {
-    return {
-      statusCode: 400,
-      body: 'Missing name or age'
-    }
-  }
-    
-  const newUser = new User(args.name, args.age);
-  newUser.printUserInfo();
-
-  return { 
-    statusCode: 200,
-    body: newUser.toJSON()
-   }
-}
+export type MainFn = (args: MainArgs) => MainFnResponse | Promise<MainFnResponse>
